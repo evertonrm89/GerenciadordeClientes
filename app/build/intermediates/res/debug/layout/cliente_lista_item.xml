@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_margin="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="16dp"
+    android:clickable="true"
+    card_view:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp">
+
+            <TextView
+                android:id="@+id/cliente_lista_item_nome"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLength="30"
+                android:text="Nome"/>
+
+            <TextView
+                android:id="@+id/cliente_lista_item_contato"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefone"/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:id="@+id/cliente_lista_item_checkBox"
+            android:button="@drawable/favoritefile"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView><!-- From: file:/C:/Users/Everton/AndroidStudioProjects/GerenciadordeClientes/app/src/main/res/layout/cliente_lista_item.xml -->

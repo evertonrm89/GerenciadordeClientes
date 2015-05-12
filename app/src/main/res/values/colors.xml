@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="borda_imagem">#BABABA</color>
+    <color name="linha_par">#CCC</color>
+    <color name="linha_impar">#96FAFA</color>
+    <color name="Tomato">#FF6347</color>
+</resources>

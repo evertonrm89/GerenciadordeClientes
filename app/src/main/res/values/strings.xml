@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">gClientes</string>
+
+    <string name="inicio">Inicio</string>
+    <string name="cliente">Clientes</string>
+    <string name="agenda">Agenda</string>
+    <string name="clientes_proximos">Clientes Proximos</string>
+    <string name="relatorios">Relatórios</string>
+    <string name="sign_in">sign</string>
+    <string name="nome">Nome</string>
+    <string name="menu_novo">Novo</string>
+    <string name="cliente_ativo">Ativo(s)</string>
+    <string name="cliente_inativo">inativo(s)</string>
+    <string name="cliente_cad">Cadastro de Cliente</string>
+
+    <string name="cliente_vazio">Nenhum Cliente Ativo</string>
+    <string name="favorito">Favorito(s)</string>
+    <string name="cliente_exibir">Cliente</string>
+    <string name="menu_edit">Editar</string>
+
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:baselineAligned="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:id="@+id/cliente_exibir_btnligar"
+            android:src="@drawable/tel"
+            android:background="@color/nliveo_transparent"
+            android:padding="5dp"
+            android:baselineAlignBottom="false" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:id="@+id/cliente_exibir_btnemail"
+            android:src="@drawable/email"
+            android:background="@color/nliveo_transparent"
+            android:padding="5dp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:id="@+id/cliente_exibir_btngps"
+            android:src="@drawable/google_maps"
+            android:background="@color/nliveo_transparent"
+            android:padding="5dp"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:id="@+id/cliente_exibir_btndeletar"
+            android:src="@drawable/delete"
+            android:background="@color/nliveo_transparent"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/Rudsonlive/DevLiveo/AndroidStudio/OpenSource/NavigationDrawer-MaterialDesign/nLiveoDrawer/src/main/res/values/attrs.xml -->
+    <eat-comment/>
+    <attr format="string" name="fontPath"/>
+    <attr format="color" name="statusBarBackground"/>
+    <!-- From: file:/Users/Rudsonlive/DevLiveo/AndroidStudio/OpenSource/NavigationDrawer-MaterialDesign/nLiveoDrawer/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="nliveo_black">#000000</color>
+    <color name="nliveo_blue_alpha_colorPrimaryDark">#801976D2</color>
+    <color name="nliveo_blue_colorPrimary">#2196F3</color>
+    <color name="nliveo_blue_colorPrimaryDark">#1976D2</color>
+    <color name="nliveo_blue_gray_alpha_colorPrimaryDark">#80455A64</color>
+    <color name="nliveo_blue_gray_colorPrimary">#607D8B</color>
+    <color name="nliveo_blue_gray_colorPrimaryDark">#80455A64</color>
+    <color name="nliveo_brown_alpha_colorPrimaryDark">#805D4037</color>
+    <color name="nliveo_brown_colorPrimary">#795548</color>
+    <color name="nliveo_brown_colorPrimaryDark">#5D4037</color>
+    <color name="nliveo_cyan_alpha_colorPrimaryDark">#800097A7</color>
+    <color name="nliveo_cyan_colorPrimary">#00BCD4</color>
+    <color name="nliveo_cyan_colorPrimaryDark">#0097A7</color>
+    <color name="nliveo_gray">#e0e0e0</color>
+    <color name="nliveo_green_alpha_colorPrimaryDark">#80388E3C</color>
+    <color name="nliveo_green_colorPrimary">#4CAF50</color>
+    <color name="nliveo_green_colorPrimaryDark">#388E3C</color>
+    <color name="nliveo_indigo_alpha_colorPrimaryDark">#8030379F</color>
+    <color name="nliveo_indigo_colorPrimary">#3F51B5</color>
+    <color name="nliveo_indigo_colorPrimaryDark">#30379F</color>
+    <color name="nliveo_lime_alpha_colorPrimaryDark">#80AFB42B</color>
+    <color name="nliveo_lime_colorPrimary">#CDDC39</color>
+    <color name="nliveo_lime_colorPrimaryDark">#AFB42B</color>
+    <color name="nliveo_orange_alpha_colorPrimaryDark">#80F57C00</color>
+    <color name="nliveo_orange_colorPrimary">#FF9800</color>
+    <color name="nliveo_orange_colorPrimaryDark">#F57C00</color>
+    <color name="nliveo_red_alpha_colorPrimaryDark">#80D32F2F</color>
+    <color name="nliveo_red_colorPrimary">#F44336</color>
+    <color name="nliveo_red_colorPrimaryDark">#D32F2F</color>
+    <color name="nliveo_teal_alpha_colorPrimaryDark">#8000796B</color>
+    <color name="nliveo_teal_colorPrimary">#009688</color>
+    <color name="nliveo_teal_colorPrimaryDark">#00796B</color>
+    <color name="nliveo_transparent">#00000000</color>
+    <color name="nliveo_white">#ffffff</color>
+    <declare-styleable name="ScrimInsetsView"><attr format="reference|color" name="insetForeground"/></declare-styleable>
+    <!-- From: file:/Users/Rudsonlive/DevLiveo/AndroidStudio/OpenSource/NavigationDrawer-MaterialDesign/nLiveoDrawer/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="default_textSize">14sp</dimen>
+    <dimen name="drawer_layout_width">-.5dp</dimen>
+    <dimen name="userBackground_layout_height">164dp</dimen>
+    <dimen name="userData_layout_height">56dp</dimen>
+    <dimen name="userData_layout_marginBottom">8dp</dimen>
+    <dimen name="userEmail_layout_marginLeft">16dp</dimen>
+    <dimen name="userEmail_textSize">14sp</dimen>
+    <dimen name="userName_layout_marginLeft">16dp</dimen>
+    <dimen name="userName_textSize">14sp</dimen>
+    <dimen name="userPhotoTree_layout_height">40dp</dimen>
+    <dimen name="userPhotoTree_layout_marginRight">16dp</dimen>
+    <dimen name="userPhotoTree_layout_width">40dp</dimen>
+    <dimen name="userPhotoTwo_layout_height">40dp</dimen>
+    <dimen name="userPhotoTwo_layout_marginRight">16dp</dimen>
+    <dimen name="userPhotoTwo_layout_width">40dp</dimen>
+    <dimen name="userPhoto_layout_height">64dp</dimen>
+    <dimen name="userPhoto_layout_marginLeft">16dp</dimen>
+    <dimen name="userPhoto_layout_marginTop">16dp</dimen>
+    <dimen name="userPhoto_layout_width">64dp</dimen>
+    <!-- From: file:/Users/Rudsonlive/DevLiveo/AndroidStudio/OpenSource/NavigationDrawer-MaterialDesign/nLiveoDrawer/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="clear">""</string>
+    <string name="drawer_close">Navigation drawer Close</string>
+    <string name="drawer_open">Open drawer navigation</string>
+    <!-- From: file:/Users/Rudsonlive/DevLiveo/AndroidStudio/OpenSource/NavigationDrawer-MaterialDesign/nLiveoDrawer/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme.DarkActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/nliveo_blue_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/nliveo_blue_alpha_colorPrimaryDark</item>
+        <item name="colorAccent">@color/nliveo_blue_colorPrimary</item>
+        <item name="colorControlHighlight">@color/nliveo_blue_colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+    <style name="AppTheme.Ligth" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/nliveo_cyan_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/nliveo_cyan_alpha_colorPrimaryDark</item>
+        <item name="colorAccent">@color/nliveo_cyan_colorPrimary</item>
+        <item name="colorControlHighlight">@color/nliveo_cyan_colorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+    <style name="nLiveo.Theme.DarkActionBar" parent="AppTheme.DarkActionBar"/>
+    <style name="nLiveo.Theme.Light" parent="AppTheme.Ligth"/>
+</resources>

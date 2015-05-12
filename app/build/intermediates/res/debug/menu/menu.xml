@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@drawable/ic_novo"
+        app:showAsAction="always"
+        android:title="@string/menu_novo"/>
+
+</menu>
+
+<!-- From: file:/C:/Users/Everton/AndroidStudioProjects/GerenciadordeClientes/app/src/main/res/menu/menu.xml -->
