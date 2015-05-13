@@ -61,6 +61,7 @@ public class ClienteExibirActivity extends Activity {
 
             clienteExibirFrag = new ClienteExibirFrag().newInstance(exibirCliente);
             mFragmentManager.beginTransaction().replace(R.id.cliente_fragment_dados, clienteExibirFrag).commit();
+
             //clienteExibirBtnFrag = new ClienteExibirBtnFrag().newInstance(exibirCliente);
             //mFragmentManager.beginTransaction().replace(R.id.cliente_fragment_btns, clienteExibirBtnFrag).commit();
         }
