@@ -11,8 +11,6 @@ import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import evertonrmachado.gclientes.dao.ClienteDAO;
-import evertonrmachado.gclientes.fragment.ClienteCadAltBtnFrag;
-import evertonrmachado.gclientes.fragment.ClienteCadAltFrag;
 import evertonrmachado.gclientes.modelo.Cliente;
 import evertonrmachado.gerenciadordeclientes.R;
 

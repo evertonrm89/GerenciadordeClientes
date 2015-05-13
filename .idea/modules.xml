@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/GerenciadordeClientes.iml" filepath="$PROJECT_DIR$/GerenciadordeClientes.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gclientes/gclientes.iml" filepath="$PROJECT_DIR$/gclientes/gclientes.iml" />
     </modules>
   </component>
 </project>
-
