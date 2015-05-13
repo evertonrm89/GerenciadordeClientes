@@ -11,37 +11,9 @@
     <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.daimajia.easing\library\1.0.1\classes.jar"
         jumboMode="false"
-        revision="22.0.1"
-        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-c258d82e61d805dcdc65958faa185119d6963a62.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.daimajia.easing\library\1.0.1\classes.jar"
-        jumboMode="false"
         revision="21.1.2"
         sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-c258d82e61d805dcdc65958faa185119d6963a62.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.3.0\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-5d97c35eeb2cd0410a31bfa31b38ea152e168ea6.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\butterknife-6.1.0-5f8d9efdd6bbfdaff8b558fb325c11ee1cb6f80a.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.3.0\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-b25b405050c184e2ea9aed1adbc962efabaed6ab.jar" />
     </item>
     <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
@@ -49,13 +21,6 @@
         revision="22.0.1"
         sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-d7e209d4c4d9a35946a2e6e504cad3b669a3cecb.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\butterknife-6.1.0-5f8d9efdd6bbfdaff8b558fb325c11ee1cb6f80a.jar" />
     </item>
     <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
@@ -72,32 +37,11 @@
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-7f8e53366c535bd56b1889c23e3689010af77bcd.jar" />
     </item>
     <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-d7e209d4c4d9a35946a2e6e504cad3b669a3cecb.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.3.0\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-a769e0612eff76781fd992b017d31c67fa7cd913.jar" />
-    </item>
-    <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.3.0\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-09212629ff88a160698af2392a747186102214dc.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.3.0\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-7d992ac4fde0b27ae0910d7bf3e8c8ff93f708de.jar" />
     </item>
     <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.3.0\classes.jar"
@@ -121,13 +65,6 @@
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-bd2698258b547b0ccee7e7e40d5bd9b3693c1f2f.jar" />
     </item>
     <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.1.3\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-136ced09e075b94b3f3df704c7cfb72f3ce7ff79.jar" />
-    </item>
-    <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.3.0\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -140,27 +77,6 @@
         revision="21.1.2"
         sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-136ced09e075b94b3f3df704c7cfb72f3ce7ff79.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.3.0\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-7158f47e616645985754327c73b4002a52724daa.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\library-2.4.0-adbddc9cf7a38b3857a3a5d0c702d9ad4ffcd565.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\picasso-2.5.0-90d591c441a8476c51d669b2ff252c8980e3ac46.jar" />
     </item>
     <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
@@ -191,25 +107,11 @@
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-5bc8cbf38bddf3a15c275a26ff578b5985afb89d.jar" />
     </item>
     <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-a9cee772a5b30445e979b5213d52a57ee2451ab8.jar" />
-    </item>
-    <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.3.0\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="565a01f90f1529f73362707c4c185d0623a68782">
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-eb693404265b9b1a3d6aacad88128333dffab7a9.jar" />
-    </item>
-    <item
-        jar="C:\Users\Everton\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-7015c702550fc82a4eee87dd5cb8528b2886721b.jar" />
     </item>
     <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.3.0\classes.jar"
@@ -219,11 +121,11 @@
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-c4ff9a2ebd2168e402025b79c2bed4271518c8b7.jar" />
     </item>
     <item
-        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
+        jar="C:\Users\Everton\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
         jumboMode="false"
-        revision="21.1.2"
-        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\picasso-2.5.0-90d591c441a8476c51d669b2ff252c8980e3ac46.jar" />
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-7015c702550fc82a4eee87dd5cb8528b2886721b.jar" />
     </item>
     <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.3.0\classes.jar"
@@ -240,13 +142,6 @@
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-569bba82778a1c0fcd526146694259ef871896ec.jar" />
     </item>
     <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.3.0\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-d2b552c5b0db40da02bf62cc75ab766cdb375336.jar" />
-    </item>
-    <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -261,13 +156,6 @@
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-9a184441a353f30742ecf3ace1349fa5bf2e94be.jar" />
     </item>
     <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.3.0\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-4bb1536fdcb4c786b751f8785da773beb2cbd292.jar" />
-    </item>
-    <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.3.0\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -280,6 +168,118 @@
         revision="22.0.1"
         sha1="71e09cda9b05b9c4bfef8348551eaf9b72950d5a">
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-569bba82778a1c0fcd526146694259ef871896ec.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.daimajia.easing\library\1.0.1\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="d7e947f993bf32a00fcb3078cdda8bb11c930afb">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-c258d82e61d805dcdc65958faa185119d6963a62.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-5d97c35eeb2cd0410a31bfa31b38ea152e168ea6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\butterknife-6.1.0-5f8d9efdd6bbfdaff8b558fb325c11ee1cb6f80a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-b25b405050c184e2ea9aed1adbc962efabaed6ab.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.1.0\63735f48b82bcd24cdd33821342428252eb1ca5a\butterknife-6.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\butterknife-6.1.0-5f8d9efdd6bbfdaff8b558fb325c11ee1cb6f80a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-d7e209d4c4d9a35946a2e6e504cad3b669a3cecb.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-a769e0612eff76781fd992b017d31c67fa7cd913.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-7d992ac4fde0b27ae0910d7bf3e8c8ff93f708de.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.daimajia.androidanimations\library\1.1.3\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8cec50fc9cc847bad0d6ed7d93814f4b34744521">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-136ced09e075b94b3f3df704c7cfb72f3ce7ff79.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-7158f47e616645985754327c73b4002a52724daa.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\picasso-2.5.0-90d591c441a8476c51d669b2ff252c8980e3ac46.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\library-2.4.0-adbddc9cf7a38b3857a3a5d0c702d9ad4ffcd565.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-a9cee772a5b30445e979b5213d52a57ee2451ab8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.0\7ff0e000d1e27e356567f56c92af3b8ab912636f\picasso-2.5.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff0e000d1e27e356567f56c92af3b8ab912636f">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\picasso-2.5.0-90d591c441a8476c51d669b2ff252c8980e3ac46.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-d2b552c5b0db40da02bf62cc75ab766cdb375336.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.3.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-4bb1536fdcb4c786b751f8785da773beb2cbd292.jar" />
     </item>
     <item
         jar="C:\Users\Everton\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"

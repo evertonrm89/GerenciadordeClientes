@@ -1,1 +1,1 @@
-include ':app', ':gclientes'
+include ':app'
