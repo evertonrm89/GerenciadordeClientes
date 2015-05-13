@@ -35,6 +35,7 @@ public class ClienteExibirActivityNew extends Activity {
     @InjectView(R.id.cliente_exibir_btngps) ImageButton btnMap;
     @InjectView(R.id.cliente_exibir_btnDeletar) ImageButton btnDeletar;
     @InjectView(R.id.cliente_exibir_btnEditar) ImageButton btnEditar;
+    @InjectView(R.id.cliente_exibir_btnhome) ImageButton btnHome;
 
     private Cliente exibirCliente;
     private int idCliente;
@@ -133,5 +134,32 @@ public class ClienteExibirActivityNew extends Activity {
                 finish();
             }
         });
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        clienteDAO = new ClienteDAO(this);
+        exibirCliente = clienteDAO.getClienteId(idCliente);
+        clienteDAO.close();
+
+        txtNome.setText(exibirCliente.getNome());
+        txtTelefone.setText(exibirCliente.getTelefone());
+        txtCelular.setText(exibirCliente.getCelular());
+        txtEmail.setText(exibirCliente.getEmail());
+        txtEndereco.setText(exibirCliente.getEndereco());
+        txtCidade.setText(exibirCliente.getCidade());
+        txtEstado.setText(exibirCliente.getEstado());
+        txtObservacao.setText(exibirCliente.getObservacao());
+
+
     }
 }

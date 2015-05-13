@@ -24,10 +24,10 @@ public class ClienteExibirFrag$$ViewInjector<T extends evertonrmachado.gclientes
     target.txtEstado = finder.castView(view, 2131296360, "field 'txtEstado'");
     view = finder.findRequiredView(source, 2131296361, "field 'txtObservacao'");
     target.txtObservacao = finder.castView(view, 2131296361, "field 'txtObservacao'");
-    view = finder.findRequiredView(source, 2131296368, "field 'btnTelefone'");
-    target.btnTelefone = finder.castView(view, 2131296368, "field 'btnTelefone'");
-    view = finder.findRequiredView(source, 2131296369, "field 'btnCelular'");
-    target.btnCelular = finder.castView(view, 2131296369, "field 'btnCelular'");
+    view = finder.findRequiredView(source, 2131296369, "field 'btnTelefone'");
+    target.btnTelefone = finder.castView(view, 2131296369, "field 'btnTelefone'");
+    view = finder.findRequiredView(source, 2131296370, "field 'btnCelular'");
+    target.btnCelular = finder.castView(view, 2131296370, "field 'btnCelular'");
     view = finder.findRequiredView(source, 2131296363, "field 'btnEmail'");
     target.btnEmail = finder.castView(view, 2131296363, "field 'btnEmail'");
     view = finder.findRequiredView(source, 2131296364, "field 'btnMap'");
