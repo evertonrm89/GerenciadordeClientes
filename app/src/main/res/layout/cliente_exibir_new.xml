@@ -22,31 +22,38 @@
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:weightSum="1"
-                android:paddingTop="5dp"
-                android:paddingRight="5dp">
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:layout_gravity="start">
 
                 <ImageButton
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_gravity="start"
+                    android:id="@+id/cliente_exibir_btnhome"
+                    android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                    android:background="@color/nliveo_transparent"
+                    android:clickable="true"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:id="@+id/cliente_exibir_btnEditar"
                     android:src="@drawable/ic_action_edit"
                     android:background="@color/nliveo_transparent"
                     android:clickable="true"
-                    android:elevation="3dp"
-                    android:layout_weight="0.05" />
+                    android:layout_gravity="end" />
 
                 <ImageButton
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
                     android:id="@+id/cliente_exibir_btnDeletar"
                     android:src="@android:drawable/ic_menu_delete"
                     android:background="@color/nliveo_transparent"
-                    android:clickable="true"
-                    android:elevation="3dp"
-                    android:layout_weight="0.05" />
+                    android:clickable="true" />
 
             </LinearLayout>
 
