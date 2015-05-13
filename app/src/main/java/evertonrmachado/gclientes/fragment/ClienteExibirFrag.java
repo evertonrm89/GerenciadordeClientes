@@ -102,7 +102,7 @@ public class ClienteExibirFrag extends Fragment {
 
                 Intent intentEmail = new Intent(Intent.ACTION_SEND);
                 intentEmail.setType("message/rtc822");
-                intentEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{""});
+                intentEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{exibirCliente.getEmail()});
                 intentEmail.putExtra(Intent.EXTRA_SUBJECT, "");
                 intentEmail.putExtra(Intent.EXTRA_TEXT, "");
                 startActivity(intentEmail);

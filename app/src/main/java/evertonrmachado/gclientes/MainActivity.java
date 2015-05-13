@@ -105,8 +105,6 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
        }
     }
 
-
-
     @Override
     protected void onResume() {
 
