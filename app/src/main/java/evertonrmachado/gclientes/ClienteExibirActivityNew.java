@@ -151,7 +151,5 @@ public class ClienteExibirActivityNew extends Activity {
         txtCidade.setText(exibirCliente.getCidade());
         txtEstado.setText(exibirCliente.getEstado());
         txtObservacao.setText(exibirCliente.getObservacao());
-
-
     }
 }
