@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import evertonrmachado.gclientes.ClienteExibirActivity;
+import evertonrmachado.gclientes.ClienteExibirActivityNew;
 import evertonrmachado.gerenciadordeclientes.R;
 import evertonrmachado.gclientes.adapter.ClienteAdaptar;
 import evertonrmachado.gclientes.dao.ClienteDAO;
@@ -77,7 +78,7 @@ public class ClienteListaFrag extends Fragment {
                 Bundle bundle = new Bundle();
                 bundle.putInt("idCliente", idCliente);
 
-                Intent intent = new Intent(ctx, ClienteExibirActivity.class);
+                Intent intent = new Intent(ctx, ClienteExibirActivityNew.class);
                 intent.putExtras(bundle);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 ctx.startActivity(intent);

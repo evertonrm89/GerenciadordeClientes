@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import evertonrmachado.gclientes.dao.ClienteDAO;
 import evertonrmachado.gclientes.modelo.Cliente;
 import evertonrmachado.gerenciadordeclientes.R;
 
@@ -30,9 +31,11 @@ public class ClienteExibirActivityNew extends Activity {
     @InjectView(R.id.cliente_exibir_btnCelular) ImageButton btnCelular;
     @InjectView(R.id.cliente_exibir_btnemail) ImageButton btnEmail;
     @InjectView(R.id.cliente_exibir_btngps) ImageButton btnMap;
-    //@InjectView(R.id.cliente_exibir_btndeletar) ImageButton btnDeletar;
+    @InjectView(R.id.cliente_exibir_btndeletar) ImageButton btnDeletar;
 
     private Cliente exibirCliente;
+    private int idCliente;
+    private ClienteDAO clienteDAO;
 
 
     @Override
@@ -40,7 +43,13 @@ public class ClienteExibirActivityNew extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cliente_exibir_new);
 
-        //exibirCliente = (Cliente) getArguments().getSerializable("cliente");
+        Intent intent = getIntent();
+
+        idCliente = intent.getExtras().getInt("idCliente");
+
+        clienteDAO = new ClienteDAO(this);
+        exibirCliente = clienteDAO.getClienteId(idCliente);
+        clienteDAO.close();
 
         ButterKnife.inject(this);
 
@@ -94,15 +103,15 @@ public class ClienteExibirActivityNew extends Activity {
             }
         });
 
-        /*btnDeletar.setOnClickListener(new View.OnClickListener() {
+        btnDeletar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ClienteDAO clienteDAO = new ClienteDAO(mActivity);
+                ClienteDAO clienteDAO = new ClienteDAO(ClienteExibirActivityNew.this);
                 clienteDAO.delete(exibirCliente);
                 clienteDAO.close();
 
-                getActivity().finish();
+                finish();
             }
-        });*/
+        });
     }
 }

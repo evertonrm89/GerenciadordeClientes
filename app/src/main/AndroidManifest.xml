@@ -41,6 +41,14 @@
             android:windowSoftInputMode="adjustResize" >
         </activity>
 
+        <activity
+            android:name="evertonrmachado.gclientes.ClienteExibirActivityNew"
+            android:label="@string/cliente_exibir"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+
+
 
 
 

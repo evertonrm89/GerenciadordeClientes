@@ -36,6 +36,11 @@
             android:windowSoftInputMode="adjustResize" >
         </activity>
         <activity
+            android:name="evertonrmachado.gclientes.ClienteExibirActivityNew"
+            android:label="@string/cliente_exibir"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />
 
