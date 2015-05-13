@@ -40,10 +40,6 @@ public class ClienteExibirActivityNew extends Activity {
     private Cliente exibirCliente;
     private int idCliente;
     private ClienteDAO clienteDAO;
-    private ClienteCadAltFrag clienteCadAltFrag;
-    private ClienteCadAltBtnFrag clienteCadAltBtnFrag;
-    private android.app.FragmentManager mFragmentManager;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,8 +47,6 @@ public class ClienteExibirActivityNew extends Activity {
         setContentView(R.layout.cliente_exibir_new);
 
         Intent intent = getIntent();
-
-        mFragmentManager = getFragmentManager();
 
         idCliente = intent.getExtras().getInt("idCliente");
 
