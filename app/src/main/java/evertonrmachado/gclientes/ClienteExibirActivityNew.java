@@ -11,6 +11,8 @@ import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import evertonrmachado.gclientes.dao.ClienteDAO;
+import evertonrmachado.gclientes.fragment.ClienteCadAltBtnFrag;
+import evertonrmachado.gclientes.fragment.ClienteCadAltFrag;
 import evertonrmachado.gclientes.modelo.Cliente;
 import evertonrmachado.gerenciadordeclientes.R;
 
@@ -31,11 +33,15 @@ public class ClienteExibirActivityNew extends Activity {
     @InjectView(R.id.cliente_exibir_btnCelular) ImageButton btnCelular;
     @InjectView(R.id.cliente_exibir_btnemail) ImageButton btnEmail;
     @InjectView(R.id.cliente_exibir_btngps) ImageButton btnMap;
-    @InjectView(R.id.cliente_exibir_btndeletar) ImageButton btnDeletar;
+    @InjectView(R.id.cliente_exibir_btnDeletar) ImageButton btnDeletar;
+    @InjectView(R.id.cliente_exibir_btnEditar) ImageButton btnEditar;
 
     private Cliente exibirCliente;
     private int idCliente;
     private ClienteDAO clienteDAO;
+    private ClienteCadAltFrag clienteCadAltFrag;
+    private ClienteCadAltBtnFrag clienteCadAltBtnFrag;
+    private android.app.FragmentManager mFragmentManager;
 
 
     @Override
@@ -44,6 +50,8 @@ public class ClienteExibirActivityNew extends Activity {
         setContentView(R.layout.cliente_exibir_new);
 
         Intent intent = getIntent();
+
+        mFragmentManager = getFragmentManager();
 
         idCliente = intent.getExtras().getInt("idCliente");
 
@@ -100,6 +108,18 @@ public class ClienteExibirActivityNew extends Activity {
                 Intent intentMapa = new Intent(Intent.ACTION_VIEW);
                 intentMapa.setData(Uri.parse("geo:0,0?z=14&q=" + exibirCliente.getEndereco()));
                 startActivity(intentMapa);
+            }
+        });
+
+        btnEditar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("exibirCliente", exibirCliente);
+                Intent intent = new Intent(ClienteExibirActivityNew.this, ClienteCadastroActivity.class);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
 
