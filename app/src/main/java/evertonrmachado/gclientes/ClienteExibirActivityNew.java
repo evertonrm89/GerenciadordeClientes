@@ -94,7 +94,14 @@ public class ClienteExibirActivityNew extends Activity {
                 intentEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{exibirCliente.getEmail()});
                 intentEmail.putExtra(Intent.EXTRA_SUBJECT, "");
                 intentEmail.putExtra(Intent.EXTRA_TEXT, "");
-                startActivity(intentEmail);
+
+                try {
+                    startActivity(intentEmail);
+                } catch (ActivityNotFoundException ex) {
+                    Toast.makeText(ClienteExibirActivityNew.this, "Por favor, verifique o aplicativo de E-mail", Toast.LENGTH_LONG).show();
+                }
+
+
             }
         });
 
@@ -118,7 +125,7 @@ public class ClienteExibirActivityNew extends Activity {
                     }
                     catch(ActivityNotFoundException innerEx)
                     {
-                        Toast.makeText(ClienteExibirActivityNew.this, "Por favor, Instale um aplicativo de mapa", Toast.LENGTH_LONG).show();
+                        Toast.makeText(ClienteExibirActivityNew.this, "Por favor, verifique o aplicativo de mapa", Toast.LENGTH_LONG).show();
                     }
                 }
 

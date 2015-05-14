@@ -22,7 +22,6 @@
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="0.5"
-                android:paddingLeft="5dp"
                 android:layout_gravity="center_horizontal"
                 android:text="FAVORITO"
                 android:button="@drawable/favoritefile" />
@@ -34,8 +33,7 @@
                 android:layout_weight="0.5"
                 android:checked="true"
                 android:textOn="Ativo"
-                android:textOff="Inativo"
-                android:elevation="@dimen/abc_text_size_button_material" />
+                android:textOff="Inativo" />
         </LinearLayout>
 
         <LinearLayout
