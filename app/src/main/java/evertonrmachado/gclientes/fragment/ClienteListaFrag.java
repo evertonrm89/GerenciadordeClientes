@@ -62,13 +62,23 @@ public class ClienteListaFrag extends Fragment {
         layout = inflater.inflate(R.layout.cliente_lista, container, false);
 
         listaClientes = (RecyclerView) layout.findViewById(R.id.cliente_lista_recycler);
-        listaClientes.setHasFixedSize(true);
-        listaClientes.setItemAnimator(new DefaultItemAnimator());
 
+        criarLista(status);
+
+        return layout;
+
+    }
+
+    public void criarLista(int status){
+
+        clientes = gerarListaClientesDAO(status);
+
+        listaClientes.setHasFixedSize(true);
         linearLayoutManager = new LinearLayoutManager(mActivity);
+        listaClientes.setLayoutManager(linearLayoutManager);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
-        criaAdapter(status);
+        adaptar = new ClienteAdaptar(clientes, mActivity, status);
 
         adaptar.SetOnItemClickListener(new ClienteAdaptar.OnItemClickListener() {
             @Override
@@ -85,92 +95,23 @@ public class ClienteListaFrag extends Fragment {
             }
         });
 
-        /*listaClientes.setOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
-                super.onScrollStateChanged(recyclerView, newState);
-            }
-
-            @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-
-                LinearLayoutManager llm = (LinearLayoutManager) listaClientes.getLayoutManager();
-                ClienteAdaptar clienteAdaptar = (ClienteAdaptar) listaClientes.getAdapter();
-
-                if(clientes.size() == llm.findLastCompletelyVisibleItemPosition() + 1){
-
-                   // List<Cliente> clienteaux = getActivity
-
-                }
-
-            }
-        });*/
-
-        return layout;
+        listaClientes.setAdapter(adaptar);
     }
 
-  //  private int contCliente=0;
+    public List<Cliente> gerarListaClientesDAO (int status) {
 
-    /*public List<Cliente> geraSeisClientes(List<Cliente> clientesBanco){
-
-        List<Cliente> clientes6 = new ArrayList<Cliente>();
-
-        int i, cont;
-
-        if (clientesBanco.size() < 6){
-            cont = clientesBanco.size();
-        }
-        else {
-            cont = 6;
-        }
-
-        for ( i = contCliente; i <= (contCliente+cont); i++ ){
-
-            clientes6.add(clientesBanco.get(i));
-        }
-
-        contCliente = i;
-
-        return clientes6;
-    }*/
-
-    public void adapterAlter (int status){
-
-        if (adaptar == null){
-            adaptar = new ClienteAdaptar(clientes, mActivity, status);
-            listaClientes.setAdapter(adaptar);
-        }
-        else{
-            adaptar.notifyDataSetChanged();
-        }
-
-    }
-
-    public void gerarListaClientesDAO (int status) {
+        List<Cliente> clientesBanco = new ArrayList<Cliente>();
 
         ClienteDAO dao = new ClienteDAO(ctx);
-        clientes = dao.getListaClientesStatusFavorito(status);
+        clientesBanco = dao.getListaClientesStatusFavorito(status);
         dao.close();
-    }
 
-    public void criaAdapter(int status){
-
-        gerarListaClientesDAO(status);
-
-        adaptar = new ClienteAdaptar(clientes, mActivity, status);
-
-        listaClientes.setAdapter(adaptar);
-
-        listaClientes.setLayoutManager(linearLayoutManager);
-
+        return clientesBanco;
     }
 
     @Override
     public void onResume() {
         super.onResume();
-
-        //criaAdapter(status);
-
+        criarLista(status);
     }
 }
