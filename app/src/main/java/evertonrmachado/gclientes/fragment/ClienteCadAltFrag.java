@@ -1,10 +1,8 @@
 package evertonrmachado.gclientes.fragment;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,8 +31,6 @@ public class ClienteCadAltFrag extends Fragment {
     @InjectView(R.id.cliente_cadalt_status) ToggleButton chkStatus;
     @InjectView(R.id.cliente_cadalt_favorito) CheckBox chkFavorito;
 
-
-    private FragmentActivity mActivity;
     private Cliente clienteCadAlt;
 
     public ClienteCadAltFrag newInstance(Cliente cliente){
@@ -43,13 +39,6 @@ public class ClienteCadAltFrag extends Fragment {
         bundle.putSerializable("cliente", cliente);
         clienteCadAltFrag.setArguments(bundle);
         return clienteCadAltFrag;
-    }
-
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        this.mActivity = (FragmentActivity) activity;
-        setRetainInstance(true);
     }
 
     @Nullable

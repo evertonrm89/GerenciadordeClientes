@@ -6,19 +6,22 @@
     android:id="@+id/cliente_fragment">
 
     <LinearLayout
+        android:id="@+id/cliente_fragment_btns"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/nliveo_blue_colorPrimary" />
+
+    <LinearLayout
+        android:layout_below="@+id/cliente_fragment_btns"
+
         android:id="@+id/cliente_fragment_dados"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <LinearLayout
-        android:id="@+id/cliente_fragment_btns"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:background="@color/nliveo_blue_colorPrimary"
-        android:layout_alignParentBottom="true" />
+
 
 
 

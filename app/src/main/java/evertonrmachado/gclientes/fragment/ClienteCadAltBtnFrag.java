@@ -114,7 +114,7 @@ public class ClienteCadAltBtnFrag extends Fragment {
                         msg += "Nome" + "\n";
                     }
                     if(clienteCadAlt.getCelular().equals("") && clienteCadAlt.getTelefone().equals("") && clienteCadAlt.getEmail().equals("")){
-                        msg += "Contato: Telefone, Celular ou E-mail" + "\n";
+                        msg += "Contato (Telefone, Celular ou E-mail)" + "\n";
                     }
 
 

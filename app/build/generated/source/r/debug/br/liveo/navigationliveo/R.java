@@ -408,9 +408,9 @@ public final class R {
 		public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f020030;
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f020031;
 		public static final int abc_textfield_search_material = 0x7f020032;
-		public static final int ic_rudsonlive = 0x7f02006e;
-		public static final int selector_check_item_navigation = 0x7f020074;
-		public static final int selector_no_check_item_navigation = 0x7f020075;
+		public static final int ic_rudsonlive = 0x7f02005f;
+		public static final int selector_check_item_navigation = 0x7f020065;
+		public static final int selector_no_check_item_navigation = 0x7f020066;
 	}
 	public static final class id {
 		public static final int action_bar = 0x7f090046;

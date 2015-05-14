@@ -28,7 +28,8 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="2dp"
                     android:layout_gravity="start"
                     android:id="@+id/cliente_exibir_btnhome"
                     android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
@@ -47,7 +48,7 @@
                     android:layout_marginRight="5dp" />
 
                 <ImageButton
-                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/cliente_exibir_btnDeletar"
