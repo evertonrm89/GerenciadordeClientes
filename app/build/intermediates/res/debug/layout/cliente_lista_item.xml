@@ -43,16 +43,18 @@
 
         </LinearLayout>
 
-        <CheckBox
+        <ImageView
             android:layout_width="0dp"
             android:layout_weight="0.1"
             android:layout_height="wrap_content"
-            android:id="@+id/cliente_lista_item_checkBox"
-            android:button="@drawable/favoritefile"
+            android:src="@android:drawable/btn_star_big_off"
+            android:id="@+id/cliente_lista_item_imgview"
             android:layout_gravity="center"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="5dp"/>
+        <!--android:button="@drawable/favoritefile"
             android:focusable="false"
-            android:focusableInTouchMode="false"/>
+            android:focusableInTouchMode="false"-->
+
 
     </LinearLayout>
 

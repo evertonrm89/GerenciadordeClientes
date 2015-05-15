@@ -37,6 +37,17 @@
                     android:clickable="true"/>
 
                 <ImageButton
+                    android:id="@+id/cliente_exibir_btnFavorito"
+                    android:layout_toLeftOf="@+id/cliente_exibir_btnEditar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/btn_star_big_off"
+                    android:background="@color/nliveo_transparent"
+                    android:layout_marginRight="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true"/>
+
+                <ImageButton
                     android:layout_toLeftOf="@+id/cliente_exibir_btnDeletar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -45,16 +56,19 @@
                     android:background="@color/nliveo_transparent"
                     android:clickable="true"
                     android:layout_gravity="end"
-                    android:layout_marginRight="5dp" />
+                    android:layout_marginRight="8dp" />
 
                 <ImageButton
                     android:layout_alignParentRight="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
                     android:id="@+id/cliente_exibir_btnDeletar"
                     android:src="@drawable/ic_action_delete"
                     android:background="@color/nliveo_transparent"
                     android:clickable="true" />
+
+
 
             </RelativeLayout>
 

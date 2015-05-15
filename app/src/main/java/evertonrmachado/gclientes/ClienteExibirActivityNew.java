@@ -1,10 +1,15 @@
 package evertonrmachado.gclientes;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -38,10 +43,12 @@ public class ClienteExibirActivityNew extends Activity {
     @InjectView(R.id.cliente_exibir_btnDeletar) ImageButton btnDeletar;
     @InjectView(R.id.cliente_exibir_btnEditar) ImageButton btnEditar;
     @InjectView(R.id.cliente_exibir_btnhome) ImageButton btnHome;
+    @InjectView(R.id.cliente_exibir_btnFavorito) ImageButton btnFavorito;
 
     private Cliente exibirCliente;
     private int idCliente;
     private ClienteDAO clienteDAO;
+    private int favorito;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +74,32 @@ public class ClienteExibirActivityNew extends Activity {
         txtEstado.setText(exibirCliente.getEstado());
         txtObservacao.setText(exibirCliente.getObservacao());
 
+        if (exibirCliente.getFavorito() == 1){
+            btnFavorito.setImageResource(android.R.drawable.btn_star_big_on);
+        }
+        else
+            btnFavorito.setImageResource(android.R.drawable.btn_star_big_off);
+
+        btnFavorito.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ClienteDAO clienteDAO = new ClienteDAO(ClienteExibirActivityNew.this);
+
+                if (exibirCliente.getFavorito() == 0) {
+                    clienteDAO.setFavorito(exibirCliente.getIdCliente(), 1);
+                    exibirCliente.setFavorito(1);
+                    btnFavorito.setImageResource(android.R.drawable.btn_star_big_on);
+
+                } else {
+                    clienteDAO.setFavorito(exibirCliente.getIdCliente(), 0);
+                    exibirCliente.setFavorito(0);
+                    btnFavorito.setImageResource(android.R.drawable.btn_star_big_off);
+                }
+
+                clienteDAO.close();
+            }
+        });
+
         btnTelefone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +113,7 @@ public class ClienteExibirActivityNew extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intentLigar = new Intent(Intent.ACTION_CALL);
-                intentLigar.setData(Uri.parse("tel:" + exibirCliente.getCelular()));
+                intentLigar.setData(Uri.parse("tel:" + exibirCliente.getCelular().trim()));
                 startActivity(intentLigar);
             }
         });
@@ -112,19 +145,13 @@ public class ClienteExibirActivityNew extends Activity {
                 String uri = String.format(Locale.getDefault(), "geo:0,0?z=14&q=" + exibirCliente.getEndereco());
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                 intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
-                try
-                {
+                try {
                     startActivity(intent);
-                }
-                catch(ActivityNotFoundException ex)
-                {
-                    try
-                    {
+                } catch (ActivityNotFoundException ex) {
+                    try {
                         Intent unrestrictedIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
                         startActivity(unrestrictedIntent);
-                    }
-                    catch(ActivityNotFoundException innerEx)
-                    {
+                    } catch (ActivityNotFoundException innerEx) {
                         Toast.makeText(ClienteExibirActivityNew.this, "Por favor, verifique o aplicativo de mapa", Toast.LENGTH_LONG).show();
                     }
                 }
@@ -148,11 +175,27 @@ public class ClienteExibirActivityNew extends Activity {
         btnDeletar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ClienteDAO clienteDAO = new ClienteDAO(ClienteExibirActivityNew.this);
-                clienteDAO.delete(exibirCliente);
-                clienteDAO.close();
 
-                finish();
+                AlertDialog alerta;
+                AlertDialog.Builder builder = new AlertDialog.Builder(ClienteExibirActivityNew.this);
+                builder.setTitle(exibirCliente.getNome());
+                builder.setMessage("Deseja realmente excluir esse Cliente?");
+                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        ClienteDAO clienteDAO = new ClienteDAO(ClienteExibirActivityNew.this);
+                        clienteDAO.delete(exibirCliente);
+                        clienteDAO.close();
+
+                        Toast.makeText(ClienteExibirActivityNew.this, "Cliente " + exibirCliente.getNome() + ", excluido com sucesso", Toast.LENGTH_LONG).show();
+                        finish();
+                    }
+                });
+                builder.setNegativeButton("Cancelar", null);
+                alerta = builder.create();
+                alerta.show();
+
+
             }
         });
 
@@ -162,7 +205,9 @@ public class ClienteExibirActivityNew extends Activity {
                 finish();
             }
         });
+
     }
+
 
     @Override
     protected void onResume() {
@@ -180,5 +225,11 @@ public class ClienteExibirActivityNew extends Activity {
         txtCidade.setText(exibirCliente.getCidade());
         txtEstado.setText(exibirCliente.getEstado());
         txtObservacao.setText(exibirCliente.getObservacao());
+
+        if (exibirCliente.getFavorito() == 1){
+            btnFavorito.setImageResource(android.R.drawable.btn_star_big_on);
+        }
+        else
+            btnFavorito.setImageResource(android.R.drawable.btn_star_big_off);
     }
 }

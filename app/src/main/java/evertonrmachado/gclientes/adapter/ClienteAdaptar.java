@@ -7,12 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 
+import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 
 import java.util.List;
+import java.util.ResourceBundle;
 
 import evertonrmachado.gclientes.dao.ClienteDAO;
 import evertonrmachado.gerenciadordeclientes.R;
@@ -28,6 +31,8 @@ public class ClienteAdaptar extends RecyclerView.Adapter<ClienteAdaptar.ClienteV
 
     private Context ctx;
     private View view;
+
+    private Cliente cliente;
 
     OnItemClickListener mItemClickListener;
 
@@ -56,9 +61,10 @@ public class ClienteAdaptar extends RecyclerView.Adapter<ClienteAdaptar.ClienteV
         return holder;
     }
 
+
     public void onBindViewHolder(final ClienteViewHolder holder, int position) {
 
-        final Cliente cliente = clientes.get(position);
+        cliente = clientes.get(position);
         String contatosPhone = null;
         String contatoEmail = null;
         String contato = null;
@@ -89,33 +95,43 @@ public class ClienteAdaptar extends RecyclerView.Adapter<ClienteAdaptar.ClienteV
             contato = contatosPhone +"\n"+ contatoEmail;
         }
 
-        if (cliente.getFavorito() == 1){
-            holder.chkFavorito.setChecked(true);
-        }
-        else
-            holder.chkFavorito.setChecked(false);
-
-
         holder.txtContato.setText(contato);
 
-        holder.chkFavorito.setOnClickListener(new View.OnClickListener() {
+        if (cliente.getFavorito() == 1){
+            holder.imgFavorito.setImageResource(android.R.drawable.btn_star_big_on);
+        }
+        else
+            holder.imgFavorito.setImageResource(android.R.drawable.btn_star_big_off);
+
+
+
+        /*holder.chkFavorito.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClienteDAO clienteDAO = new ClienteDAO(ctx);
 
                 if(holder.chkFavorito.isChecked()){
                     clienteDAO.setFavorito(cliente.getIdCliente(), 1);
+                    cliente.setFavorito(1);
+                    holder.chkFavorito.setChecked(true);
+                    notifyItemChanged(holder.getPosition());
+
                 }
-                else
+                else {
                     clienteDAO.setFavorito(cliente.getIdCliente(), 0);
+                    cliente.setFavorito(0);
+                    holder.chkFavorito.setChecked(false);
+                    notifyItemChanged(holder.getPosition());
+
+                }
 
                 clienteDAO.close();
             }
-        });
+        });*/
 
         try {
             YoYo.with(Techniques.Landing)
-                    .duration(400)
+                    .duration(500)
                     .playOn(holder.itemView);
         }
         catch (Exception e){
@@ -128,14 +144,14 @@ public class ClienteAdaptar extends RecyclerView.Adapter<ClienteAdaptar.ClienteV
 
         public TextView txtContato;
         public TextView txtNome;
-        public CheckBox chkFavorito;
+        public ImageView imgFavorito;
 
         public ClienteViewHolder(final View itemView) {
             super(itemView);
 
             txtNome = (TextView) itemView.findViewById(R.id.cliente_lista_item_nome);
             txtContato = (TextView) itemView.findViewById(R.id.cliente_lista_item_contato);
-            chkFavorito = (CheckBox) itemView.findViewById(R.id.cliente_lista_item_checkBox);
+            imgFavorito = (ImageView) itemView.findViewById(R.id.cliente_lista_item_imgview);
 
             itemView.setOnClickListener(this);
         }

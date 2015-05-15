@@ -41,9 +41,14 @@ public class ClienteListaFrag extends Fragment {
     private LinearLayoutManager linearLayoutManager;
     FragmentActivity mActivity;
 
-    public void setStatus(int status){
 
-        this.status = status;
+    public ClienteListaFrag newInstance(int status){
+        ClienteListaFrag clienteListaFrag = new ClienteListaFrag();
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("status", status);
+        clienteListaFrag.setArguments(bundle);
+
+        return clienteListaFrag;
     }
 
     @Override
@@ -56,6 +61,8 @@ public class ClienteListaFrag extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        status = getArguments().getInt("status");
 
         ctx = getActivity().getBaseContext();
 
@@ -76,6 +83,7 @@ public class ClienteListaFrag extends Fragment {
         listaClientes.setHasFixedSize(true);
         linearLayoutManager = new LinearLayoutManager(mActivity);
         listaClientes.setLayoutManager(linearLayoutManager);
+
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         adaptar = new ClienteAdaptar(clientes, mActivity, status);
