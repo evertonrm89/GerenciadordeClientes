@@ -53,7 +53,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
+                android:inputType="textMultiLine|textCapSentences"
                 android:maxLength="30"
                 android:ems="10"
                 android:id="@+id/cliente_cadalt_nome"
@@ -154,7 +154,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPostalAddress"
+                android:inputType="textPostalAddress|textCapSentences"
                 android:ems="10"
                 android:id="@+id/cliente_cadalt_endereco"
                 android:layout_marginBottom="5dp"
@@ -179,6 +179,7 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textCapSentences"
                 android:id="@+id/cliente_cadalt_cidade"
                 android:textSize="20dp"
                 android:layout_weight="0.7"
@@ -195,6 +196,7 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:inputType="textCapCharacters"
                 android:id="@+id/cliente_cadalt_estado"
                 android:layout_weight="0.3"
                 android:textSize="20dp"
@@ -219,7 +221,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
+                android:inputType="textMultiLine|textCapSentences"
                 android:ems="10"
                 android:id="@+id/cliente_cadalt_observacao"
                 android:textSize="20dp"

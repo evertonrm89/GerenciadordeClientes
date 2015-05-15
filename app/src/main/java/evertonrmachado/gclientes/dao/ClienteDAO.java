@@ -119,11 +119,11 @@ public class ClienteDAO extends SQLiteOpenHelper {
 
         if(status == 3){
             String[] args = new String[] {String.valueOf(1)};
-            cursor = getWritableDatabase().query(TABELA_CLIENTES, COLUNAS_CLIENTES, FILTER_FAVORITO, args, null, null, null);
+            cursor = getWritableDatabase().query(TABELA_CLIENTES, COLUNAS_CLIENTES, FILTER_FAVORITO, args, null, null, "nome COLLATE NOCASE ASC");
         }
         else {
             String[] args = new String[] { String.valueOf(status)};
-            cursor = getWritableDatabase().query(TABELA_CLIENTES, COLUNAS_CLIENTES, FILTER_STATUS, args, null, null, null);
+            cursor = getWritableDatabase().query(TABELA_CLIENTES, COLUNAS_CLIENTES, FILTER_STATUS, args, null, null, "nome COLLATE NOCASE ASC");
         }
 
         while(cursor.moveToNext()){
