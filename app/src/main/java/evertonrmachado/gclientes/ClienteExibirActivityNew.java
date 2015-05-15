@@ -133,8 +133,6 @@ public class ClienteExibirActivityNew extends Activity {
                 } catch (ActivityNotFoundException ex) {
                     Toast.makeText(ClienteExibirActivityNew.this, "Por favor, verifique o aplicativo de E-mail", Toast.LENGTH_LONG).show();
                 }
-
-
             }
         });
 
@@ -155,8 +153,6 @@ public class ClienteExibirActivityNew extends Activity {
                         Toast.makeText(ClienteExibirActivityNew.this, "Por favor, verifique o aplicativo de mapa", Toast.LENGTH_LONG).show();
                     }
                 }
-
-
             }
         });
 
@@ -207,7 +203,6 @@ public class ClienteExibirActivityNew extends Activity {
         });
 
     }
-
 
     @Override
     protected void onResume() {
