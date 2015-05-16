@@ -309,7 +309,7 @@
     <!-- From: file:/C:/Users/Everton/AndroidStudioProjects/GerenciadordeClientes/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="agenda">Agenda</string>
-    <string name="app_name">gClientes</string>
+    <string name="app_name">GClientes</string>
     <!-- From: file:/C:/Users/Everton/AndroidStudioProjects/GerenciadordeClientes/app/build/intermediates/exploded-aar/br.com.liveo/navigationdrawer-material/1.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="clear">""</string>

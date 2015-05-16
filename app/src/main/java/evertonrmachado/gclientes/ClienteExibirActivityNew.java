@@ -48,8 +48,6 @@ public class ClienteExibirActivityNew extends Activity {
     private Cliente exibirCliente;
     private int idCliente;
     private ClienteDAO clienteDAO;
-    private int favorito;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

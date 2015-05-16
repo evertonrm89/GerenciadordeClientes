@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">gClientes</string>
+    <string name="app_name">GClientes</string>
 
     <string name="inicio">Inicio</string>
     <string name="cliente">Clientes</string>
