@@ -3,13 +3,10 @@ package evertonrmachado.gclientes;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -48,6 +45,7 @@ public class ClienteExibirActivityNew extends Activity {
     private Cliente exibirCliente;
     private int idCliente;
     private ClienteDAO clienteDAO;
+    private AlertDialog alerta;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,62 +96,86 @@ public class ClienteExibirActivityNew extends Activity {
             }
         });
 
-        btnTelefone.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentLigar = new Intent(Intent.ACTION_CALL);
-                intentLigar.setData(Uri.parse("tel:" + exibirCliente.getTelefone()));
-                startActivity(intentLigar);
-            }
-        });
-
-        btnCelular.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentLigar = new Intent(Intent.ACTION_CALL);
-                intentLigar.setData(Uri.parse("tel:" + exibirCliente.getCelular().trim()));
-                startActivity(intentLigar);
-            }
-        });
-
-        btnEmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intentEmail = new Intent(Intent.ACTION_SEND);
-                intentEmail.setType("message/rtc822");
-                intentEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{exibirCliente.getEmail()});
-                intentEmail.putExtra(Intent.EXTRA_SUBJECT, "");
-                intentEmail.putExtra(Intent.EXTRA_TEXT, "");
-
-                try {
-                    startActivity(intentEmail);
-                } catch (ActivityNotFoundException ex) {
-                    Toast.makeText(ClienteExibirActivityNew.this, "Por favor, verifique o aplicativo de E-mail", Toast.LENGTH_LONG).show();
+        if(exibirCliente.getTelefone().isEmpty()){
+            btnTelefone.setEnabled(false);
+        }
+        else{
+            btnTelefone.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intentLigar = new Intent(Intent.ACTION_CALL);
+                    intentLigar.setData(Uri.parse("tel:" + exibirCliente.getTelefone()));
+                    startActivity(intentLigar);
                 }
-            }
-        });
+            });
+        }
+        if(exibirCliente.getCelular().isEmpty()){
+            btnCelular.setEnabled(false);
+        }
+        else{
+            btnCelular.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intentLigar = new Intent(Intent.ACTION_CALL);
+                    intentLigar.setData(Uri.parse("tel:" + exibirCliente.getCelular().trim()));
+                    startActivity(intentLigar);
+                }
 
-        btnMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+            });
+        }
 
-                String uri = String.format(Locale.getDefault(), "geo:0,0?z=14&q=" + exibirCliente.getEndereco());
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
-                try {
-                    startActivity(intent);
-                } catch (ActivityNotFoundException ex) {
+        if(exibirCliente.getEmail().isEmpty()){
+            btnEmail.setEnabled(false);
+        }
+        else {
+            btnEmail.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Intent intentEmail = new Intent(Intent.ACTION_SEND);
+                    intentEmail.setType("message/rtc822");
+                    intentEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{exibirCliente.getEmail()});
+                    intentEmail.putExtra(Intent.EXTRA_SUBJECT, "");
+                    intentEmail.putExtra(Intent.EXTRA_TEXT, "");
+
                     try {
-                        Intent unrestrictedIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                        startActivity(unrestrictedIntent);
-                    } catch (ActivityNotFoundException innerEx) {
-                        Toast.makeText(ClienteExibirActivityNew.this, "Por favor, verifique o aplicativo de mapa", Toast.LENGTH_LONG).show();
+                        startActivity(intentEmail);
+                    } catch (ActivityNotFoundException ex) {
+                        Toast.makeText(ClienteExibirActivityNew.this, "Por favor, verifique o aplicativo de E-mail", Toast.LENGTH_LONG).show();
                     }
                 }
-            }
-        });
+            });
+        }
 
+        if(exibirCliente.getEndereco().isEmpty()){
+            btnMap.setEnabled(false);
+        }
+        else {
+            btnMap.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+
+                    String endereco = exibirCliente.getEndereco();
+                    if(!exibirCliente.getCidade().isEmpty()){endereco += ", " + exibirCliente.getCidade();}
+                    if(!exibirCliente.getEstado().isEmpty()){endereco += ", " + exibirCliente.getEstado();}
+
+                    String uri = String.format(Locale.getDefault(), "geo:0,0?z=14&q=" + endereco);
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                    intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+                    try {
+                        startActivity(intent);
+                    } catch (ActivityNotFoundException ex) {
+                        try {
+                            Intent unrestrictedIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+                            startActivity(unrestrictedIntent);
+                        } catch (ActivityNotFoundException innerEx) {
+                            Toast.makeText(ClienteExibirActivityNew.this, "Por favor, verifique o aplicativo de mapa", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
+            });
+        }
         btnEditar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

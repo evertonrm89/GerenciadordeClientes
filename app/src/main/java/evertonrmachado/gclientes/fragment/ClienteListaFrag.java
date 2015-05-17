@@ -8,9 +8,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.internal.app.ToolbarActionBar;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -63,6 +66,18 @@ public class ClienteListaFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         status = getArguments().getInt("status");
+
+        switch (status){
+            case 1:
+                ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle("Clientes Ativos");
+                break;
+            case 0:
+                ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle("Clientes Inativos");
+                break;
+            case 3:
+                ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle("Clientes Favoritos");
+                break;
+        }
 
         ctx = getActivity().getBaseContext();
 

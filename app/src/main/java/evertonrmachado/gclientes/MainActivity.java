@@ -74,37 +74,30 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
 
        FragmentManager mFragmentManager = getSupportFragmentManager();
 
+       ClienteListaFrag clienteListaFrag;
+
+       this.getToolbar().setBackgroundColor(getResources().getColor(R.color.nliveo_blue_colorPrimary));
 
        switch (position){
 
            case 1:
-               ClienteListaFrag clienteListaFragAtivos;
-               clienteListaFragAtivos = new ClienteListaFrag().newInstance(1);
-               mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFragAtivos).commit();
-               this.getToolbar().setSubtitle("Clientes Ativos");
-               this.getToolbar().setBackgroundColor(getResources().getColor(R.color.nliveo_blue_colorPrimary));
+               clienteListaFrag = new ClienteListaFrag().newInstance(1);
+               mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFrag).commit();
                break;
            case 2:
-               ClienteListaFrag clienteListaFragInativos;
-               clienteListaFragInativos = new ClienteListaFrag().newInstance(0);
-               mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFragInativos).commit();
-               this.getToolbar().setSubtitle("Clientes Inativo");
-               this.getToolbar().setBackgroundColor(getResources().getColor(R.color.nliveo_blue_colorPrimary));
+               clienteListaFrag = new ClienteListaFrag().newInstance(0);
+               mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFrag).commit();
                break;
 
            case 0:
-               ClienteListaFrag clienteListaFragFavoritos;
-               clienteListaFragFavoritos = new ClienteListaFrag().newInstance(3);
-               mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFragFavoritos).commit();
-               this.getToolbar().setSubtitle("Clientes Favoritos");
-               this.getToolbar().setBackgroundColor(getResources().getColor(R.color.nliveo_blue_colorPrimary));
+               clienteListaFrag = new ClienteListaFrag().newInstance(3);
+               mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFrag).commit();
                break;
        }
     }
 
     @Override
     protected void onResume() {
-
 
         super.onResume();
     }
