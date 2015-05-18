@@ -1940,9 +1940,9 @@ containing a value of this type.
         public static final int card_view=0x7f090079;
         public static final int checkbox=0x7f09003e;
         public static final int classic=0x7f090030;
-        public static final int cliente_alterar=0x7f090054;
         public static final int cliente_alterar_btn_calcelar=0x7f09005f;
         public static final int cliente_alterar_btn_salvar=0x7f090060;
+        public static final int cliente_cad_alt=0x7f090054;
         public static final int cliente_cadalt_celular=0x7f090059;
         public static final int cliente_cadalt_cidade=0x7f09005c;
         public static final int cliente_cadalt_email=0x7f09005a;

@@ -3,11 +3,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/cliente_alterar">
+    android:id="@+id/cliente_cad_alt">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_margin="5dp">
 
@@ -15,25 +15,42 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp">
+            android:layout_margin="5dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
 
-            <CheckBox
-                android:id="@+id/cliente_cadalt_favorito"
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="0.5"
-                android:layout_gravity="center_horizontal"
-                android:text="FAVORITO"
-                android:button="@drawable/favoritefile" />
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
 
-            <ToggleButton
-                android:id="@+id/cliente_cadalt_status"
+                <CheckBox
+                    android:id="@+id/cliente_cadalt_favorito"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="  FAVORITO"
+                    android:textStyle="bold"
+                    android:button="@drawable/favoritefile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_weight="0.5"
-                android:checked="true"
-                android:textOn="Ativo"
-                android:textOff="Inativo" />
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+
+                <ToggleButton
+                    android:id="@+id/cliente_cadalt_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:checked="true"
+                    android:textOn="Ativo"
+                    android:textOff="Inativo" />
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -71,10 +88,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefone"
+                android:text="Telefone:"
                 android:layout_marginRight="5dp"
                 android:textSize="17dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <EditText
                 android:layout_width="match_parent"

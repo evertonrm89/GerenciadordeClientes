@@ -121,6 +121,11 @@ public class ClienteListaFrag extends Fragment {
         listaClientes.setAdapter(adaptar);
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
     public List<Cliente> gerarListaClientesDAO (int status) {
 
         List<Cliente> clientesBanco = new ArrayList<Cliente>();
