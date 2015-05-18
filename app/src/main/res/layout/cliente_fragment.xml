@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:background="@color/nliveo_blue_colorPrimary" />
+        android:background="@color/nliveo_blue_colorPrimary"
+        android:elevation="5dp"/>
 
     <LinearLayout
         android:layout_below="@+id/cliente_fragment_btns"

@@ -1,26 +1,12 @@
 package evertonrmachado.gclientes;
 
 import android.app.Activity;
-import android.content.Context;
+
 import android.content.Intent;
 import android.os.Bundle;
 
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewTreeObserver;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import evertonrmachado.gclientes.dao.ClienteDAO;
-import evertonrmachado.gclientes.fragment.ClienteCadAltBtnFrag;
-import evertonrmachado.gclientes.fragment.ClienteCadAltFrag;
-import evertonrmachado.gclientes.fragment.ClienteExibirBtnFrag;
 import evertonrmachado.gclientes.fragment.ClienteExibirFrag;
 import evertonrmachado.gclientes.modelo.Cliente;
 import evertonrmachado.gerenciadordeclientes.R;
@@ -31,15 +17,10 @@ import evertonrmachado.gerenciadordeclientes.R;
 public class ClienteExibirActivity extends Activity {
 
     private ClienteExibirFrag clienteExibirFrag;
-    private ClienteCadAltFrag clienteCadAltFrag;
-    private ClienteCadAltBtnFrag clienteCadAltBtnFrag;
-    private ClienteExibirBtnFrag clienteExibirBtnFrag;
     private android.app.FragmentManager mFragmentManager;
     private Cliente exibirCliente;
     private int idCliente;
     private Intent intent;
-
-    //public String tituloActionBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,13 +38,11 @@ public class ClienteExibirActivity extends Activity {
 
         clienteDAO.close();
 
-        if (clienteExibirFrag == null && clienteExibirBtnFrag == null){
+        if (clienteExibirFrag == null ){
 
             clienteExibirFrag = new ClienteExibirFrag().newInstance(exibirCliente);
             mFragmentManager.beginTransaction().replace(R.id.cliente_fragment_dados, clienteExibirFrag).commit();
 
-            //clienteExibirBtnFrag = new ClienteExibirBtnFrag().newInstance(exibirCliente);
-            //mFragmentManager.beginTransaction().replace(R.id.cliente_fragment_btns, clienteExibirBtnFrag).commit();
         }
 
         //tituloActionBar = "Código do Cliente: " + exibirCliente.getIdCliente();

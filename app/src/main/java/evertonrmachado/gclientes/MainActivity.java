@@ -3,6 +3,7 @@ package evertonrmachado.gclientes;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
+import android.util.SparseIntArray;
 import android.view.Menu;
 
 import android.view.MenuInflater;
@@ -25,6 +26,7 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
 
     public List<String> mListNameItem;
     public List<Integer> mListHeaderItem;
+    public List<Integer> mListIconItem;
 
     @Override
     public void onUserInformation() {
@@ -46,23 +48,37 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
 
         // name of the list items
         mListNameItem = new ArrayList<>();
-        mListNameItem.add(0, getString(R.string.favorito));
-        mListNameItem.add(1, getString(R.string.cliente_ativo));
-        mListNameItem.add(2, getString(R.string.cliente_inativo));
+        mListNameItem.add(0, getString(R.string.cliente));
+        mListNameItem.add(1, getString(R.string.favorito));
+        mListNameItem.add(2, getString(R.string.cliente_ativo));
+        mListNameItem.add(3, getString(R.string.cliente_inativo));
+        mListNameItem.add(4, getString(R.string.vazio));
+        mListNameItem.add(5, getString(R.string.backup));
         //mListNameItem.add(3, getString(R.string.agenda));
         //mListNameItem.add(4, getString(R.string.clientes_proximos));
        // mListNameItem.add(5, getString(R.string.relatorios));
 
 
         // icons list items
-        List<Integer> mListIconItem = new ArrayList<>();
-        mListIconItem.add(0, R.drawable.account_star); //Item no icon set 0
-        mListIconItem.add(1, R.drawable.account);
-        mListIconItem.add(2, R.drawable.account_remove);
+        mListIconItem = new ArrayList<>();
+        mListIconItem.add(0, 0); //Item no icon set 0
+        mListIconItem.add(1, R.drawable.account_star);
+        mListIconItem.add(2, R.drawable.account);
+        mListIconItem.add(3, R.drawable.account_remove);
+        mListIconItem.add(4, 0);
+        mListIconItem.add(5, R.drawable.ic_backup);
         //mListIconItem.add(3, R.drawable.ic_action_calendar_month); //Item no icon set 0
         //mListIconItem.add(4, R.drawable.ic_action_globe);
         //mListIconItem.add(5, R.drawable.ic_action_line_chart);
 
+        mListHeaderItem = new ArrayList<>();
+        mListHeaderItem.add(0);
+        mListHeaderItem.add(4);
+
+        // {} Opcional - Entre os nomes houver qualquer contador de itens, você deve indicá-lo (posição) eo valor aqui
+       // SparseIntArray mSparseCounterItem = new SparseIntArray (); // indicar todos os itens que têm um contador
+       // mSparseCounterItem.put(0, 7);
+       // mSparseCounterItem.put(6, 250);
 
         this.setNavigationAdapter(mListNameItem, mListIconItem, mListHeaderItem, null);
 

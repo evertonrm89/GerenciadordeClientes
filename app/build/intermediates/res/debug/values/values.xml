@@ -310,6 +310,7 @@
     <eat-comment/>
     <string name="agenda">Agenda</string>
     <string name="app_name">GClientes</string>
+    <string name="backup">Backup</string>
     <!-- From: file:/C:/Users/Everton/AndroidStudioProjects/GerenciadordeClientes/app/build/intermediates/exploded-aar/br.com.liveo/navigationdrawer-material/1.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="clear">""</string>
@@ -378,6 +379,9 @@ available. Please contact the developer for assistance.</string>
     <eat-comment/>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>
     <string name="store_picture_title">Save image</string>
+    <!-- From: file:/C:/Users/Everton/AndroidStudioProjects/GerenciadordeClientes/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="vazio"/>
     <!-- From: file:/C:/Users/Everton/AndroidStudioProjects/GerenciadordeClientes/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/res/values/wallet_strings.xml -->
     <eat-comment/>
     <string name="wallet_buy_button_place_holder" translation_description="Text on a button that allows a user to make a payment with Google Wallet [CHAR LIMIT=30]">Buy with Google</string>

@@ -19,6 +19,8 @@
     <string name="favorito">Favorito(s)</string>
     <string name="cliente_exibir">Cliente</string>
     <string name="menu_edit">Editar</string>
+    <string name="backup">Backup</string>
+    <string name="vazio" />
 
 
 </resources>
