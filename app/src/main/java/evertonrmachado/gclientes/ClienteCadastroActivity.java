@@ -38,5 +38,4 @@ public class ClienteCadastroActivity extends Activity {
 
     }
 
-
 }
