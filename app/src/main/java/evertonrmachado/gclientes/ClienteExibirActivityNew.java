@@ -136,7 +136,7 @@ public class ClienteExibirActivityNew extends Activity {
                     intentEmail.setType("message/rtc822");
                     intentEmail.putExtra(Intent.EXTRA_EMAIL, new String[]{exibirCliente.getEmail()});
                     intentEmail.putExtra(Intent.EXTRA_SUBJECT, "");
-                    intentEmail.putExtra(Intent.EXTRA_TEXT, "");
+                    intentEmail.putExtra(Intent.EXTRA_TEXT, "\n Enviado via app: GClientes (Gerenciador de Clientes)");
 
                     try {
                         startActivity(intentEmail);

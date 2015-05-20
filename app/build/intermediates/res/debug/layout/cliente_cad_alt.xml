@@ -196,7 +196,7 @@
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:inputType="textMultiLine|textCapSentences"
+                android:inputType="textCapSentences"
                 android:id="@+id/cliente_cadalt_cidade"
                 android:textSize="20dp"
                 android:layout_weight="0.7"

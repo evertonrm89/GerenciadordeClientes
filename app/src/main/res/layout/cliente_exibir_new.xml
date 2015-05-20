@@ -23,13 +23,12 @@
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="5dp">
+                android:layout_margin="5dp"
+                android:gravity="center">
 
                 <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="6dp"
-                    android:layout_marginTop="2dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:layout_gravity="start"
                     android:id="@+id/cliente_exibir_btnhome"
                     android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
@@ -44,7 +43,7 @@
                     android:src="@android:drawable/btn_star_big_off"
                     android:background="@color/nliveo_transparent"
                     android:layout_marginRight="8dp"
-                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentBottom="false"
                     android:clickable="true"/>
 
                 <ImageButton

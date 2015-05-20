@@ -21,7 +21,6 @@ import br.liveo.navigationliveo.NavigationLiveo;
 import evertonrmachado.gclientes.fragment.ClienteListaFrag;
 import evertonrmachado.gerenciadordeclientes.R;
 
-
 public class MainActivity extends NavigationLiveo implements NavigationLiveoListener {
 
     public List<String> mListNameItem;
@@ -36,7 +35,6 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
         this.mUserEmail.setText("");
         //this.mUserPhoto.setImageResource(R.drawable.ic_action_user);
         this.mUserBackground.setImageResource(R.drawable.fundo2);
-
     }
 
     @Override
@@ -44,7 +42,7 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
 
         this.setNavigationListener(this);
 
-        this.setDefaultStartPositionNavigation(1);
+        this.setDefaultStartPositionNavigation(2);
 
         // name of the list items
         mListNameItem = new ArrayList<>();
@@ -96,16 +94,17 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
        switch (position){
 
            case 1:
-               clienteListaFrag = new ClienteListaFrag().newInstance(1);
-               mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFrag).commit();
-               break;
-           case 2:
-               clienteListaFrag = new ClienteListaFrag().newInstance(0);
+               clienteListaFrag = new ClienteListaFrag().newInstance(3);
                mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFrag).commit();
                break;
 
-           case 0:
-               clienteListaFrag = new ClienteListaFrag().newInstance(3);
+           case 2:
+               clienteListaFrag = new ClienteListaFrag().newInstance(1);
+               mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFrag).commit();
+               break;
+
+           case 3:
+               clienteListaFrag = new ClienteListaFrag().newInstance(0);
                mFragmentManager.beginTransaction().replace(layoutContainerId, clienteListaFrag).commit();
                break;
        }
@@ -116,7 +115,6 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
 
         super.onResume();
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -145,7 +143,6 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
         }
     }
 
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
@@ -153,7 +150,6 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
 
     @Override
     public void onPrepareOptionsMenuNavigation(Menu menu, int i, boolean b) {
-
 
     }
 
@@ -166,6 +162,5 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
     public void onClickUserPhotoNavigation(View view) {
 
     }
-
 
 }

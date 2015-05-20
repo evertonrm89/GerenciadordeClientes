@@ -13,9 +13,14 @@
 
     <application
         android:allowBackup="true"
+        android:backupAgent="evertonrmachado.gclientes.backup.Backup"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/myTheme" >
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIznw7IF-LBr8K685k4XvxU39uDdxCJhpYli_oBg" />
+
         <activity
             android:name="evertonrmachado.gclientes.MainActivity"
             android:label="@string/app_name"

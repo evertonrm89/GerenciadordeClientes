@@ -79,18 +79,18 @@
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-136ced09e075b94b3f3df704c7cfb72f3ce7ff79.jar" />
     </item>
     <item
-        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-5bc8cbf38bddf3a15c275a26ff578b5985afb89d.jar" />
-    </item>
-    <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
         <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-d9732ae1b21c073ae8aaa47e293dac6c582ecc3a.jar" />
+    </item>
+    <item
+        jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\pre-dexed\debug\classes-5bc8cbf38bddf3a15c275a26ff578b5985afb89d.jar" />
     </item>
     <item
         jar="C:\Users\Everton\AndroidStudioProjects\GerenciadordeClientes\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.3.0\classes.jar"
