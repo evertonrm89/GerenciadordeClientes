@@ -14,6 +14,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 import evertonrmachado.gclientes.ClienteCadastroActivity;
 import evertonrmachado.gclientes.Util.ClienteHelper;
+import evertonrmachado.gclientes.backup.Backup;
 import evertonrmachado.gclientes.dao.ClienteDAO;
 import evertonrmachado.gclientes.modelo.Cliente;
 import evertonrmachado.gerenciadordeclientes.R;
@@ -104,7 +105,8 @@ public class ClienteCadAltBtnFrag extends Fragment {
                         clienteDAO.close();
 
                         Toast.makeText(getActivity(), "Cliente Alterado com Sucesso", Toast.LENGTH_LONG).show();
-
+                        Backup backup = new Backup();
+                        
                         getActivity().finish();
                     }
 
