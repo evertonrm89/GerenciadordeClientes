@@ -162,11 +162,8 @@ public class ClienteExibirActivityNew extends Activity {
                     if(!exibirCliente.getEstado().isEmpty()){endereco += ", " + exibirCliente.getEstado();}
 
                     String uri = String.format(Locale.getDefault(), "geo:0,0?z=14&q=" + endereco);
-
-                    //String uri = String.format(Locale.getDefault(), "geo:%f,%f?q=%f,%f (%s)" + endereco);
-
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
-                   // intent.setClassName("com.google.android.apps.maps", "com.google.android.maps.MapsActivity");
+
                     try {
                         startActivity(intent);
                     } catch (ActivityNotFoundException ex) {
