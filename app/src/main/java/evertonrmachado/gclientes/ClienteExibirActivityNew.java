@@ -211,8 +211,6 @@ public class ClienteExibirActivityNew extends Activity {
                 builder.setNegativeButton("Cancelar", null);
                 alerta = builder.create();
                 alerta.show();
-
-
             }
         });
 
@@ -222,7 +220,6 @@ public class ClienteExibirActivityNew extends Activity {
                 finish();
             }
         });
-
     }
 
     @Override
