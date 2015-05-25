@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+
+    <LinearLayout
+        android:id="@+id/ll_salvar_cancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/nliveo_blue_colorPrimary" >
+
+        <Button
+            android:id="@+id/cliente_alterar_btn_salvar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/nliveo_blue_colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Salvar" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="25dp"
+            android:background="#ffffff"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:id="@+id/cliente_alterar_btn_calcelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/nliveo_blue_colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Cancelar" />
+
+    </LinearLayout>
+
+</LinearLayout>
+<!-- From: file:/C:/Users/Everton/AndroidStudioProjects/GerenciadordeClientes/app/src/main/res/layout/cliente_cad_alt_btns_new.xml -->
