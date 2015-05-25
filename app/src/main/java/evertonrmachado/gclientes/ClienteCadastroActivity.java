@@ -2,6 +2,7 @@ package evertonrmachado.gclientes;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import evertonrmachado.gclientes.fragment.ClienteCadAltBtnFrag;
 import evertonrmachado.gclientes.fragment.ClienteCadAltFrag;
@@ -36,6 +37,11 @@ public class ClienteCadastroActivity extends Activity {
 
         mFragmentManager.beginTransaction().replace(R.id.cliente_fragment_btns, clienteCadAltBtnFrag).commit();
 
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
     }
 
 }

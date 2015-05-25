@@ -75,7 +75,7 @@
                 android:ems="10"
                 android:id="@+id/cliente_cadalt_nome"
                 android:layout_marginBottom="5dp"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:textColor="@color/nliveo_black"/>
         </LinearLayout>
 
@@ -100,7 +100,7 @@
                 android:ems="10"
                 android:id="@+id/cliente_cadalt_telefone"
                 android:layout_marginBottom="5dp"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:textColor="@color/nliveo_black"/>
         </LinearLayout>
 
@@ -125,7 +125,7 @@
                 android:ems="10"
                 android:id="@+id/cliente_cadalt_celular"
                 android:layout_marginBottom="5dp"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:textColor="@color/nliveo_black" />
         </LinearLayout>
 
@@ -150,7 +150,7 @@
                 android:ems="10"
                 android:id="@+id/cliente_cadalt_email"
                 android:layout_marginBottom="5dp"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:textColor="@color/nliveo_black"/>
         </LinearLayout>
 
@@ -175,7 +175,7 @@
                 android:ems="10"
                 android:id="@+id/cliente_cadalt_endereco"
                 android:layout_marginBottom="5dp"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:textColor="@color/nliveo_black" />
         </LinearLayout>
 
@@ -198,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="textCapSentences"
                 android:id="@+id/cliente_cadalt_cidade"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:layout_weight="0.7"
                 android:textColor="@color/nliveo_black"/>
 
@@ -216,7 +216,7 @@
                 android:inputType="textCapCharacters"
                 android:id="@+id/cliente_cadalt_estado"
                 android:layout_weight="0.3"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:textColor="@color/nliveo_black" />
 
         </LinearLayout>
@@ -241,7 +241,7 @@
                 android:inputType="textMultiLine|textCapSentences"
                 android:ems="10"
                 android:id="@+id/cliente_cadalt_observacao"
-                android:textSize="20dp"
+                android:textSize="17dp"
                 android:gravity="top"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/nliveo_black"/>

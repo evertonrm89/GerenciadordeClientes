@@ -22,7 +22,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import evertonrmachado.gclientes.ClienteExibirActivity;
+
 import evertonrmachado.gclientes.ClienteExibirActivityNew;
 import evertonrmachado.gerenciadordeclientes.R;
 import evertonrmachado.gclientes.adapter.ClienteAdaptar;

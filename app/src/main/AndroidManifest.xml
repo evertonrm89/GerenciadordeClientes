@@ -23,6 +23,7 @@
         <activity
             android:name="evertonrmachado.gclientes.MainActivity"
             android:theme="@style/nLiveoDrawer"
+            android:configChanges="orientation|screenSize"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,25 +35,17 @@
 
         <activity
             android:name="evertonrmachado.gclientes.ClienteCadastroActivity"
-            android:label="@string/cliente_cad" >
+            android:label="@string/cliente_cad"
+            android:configChanges="orientation|screenSize">
         </activity>
 
-        <activity
-            android:name="evertonrmachado.gclientes.ClienteExibirActivity"
-            android:label="@string/cliente_exibir"
-            android:windowSoftInputMode="adjustResize" >
-        </activity>
 
         <activity
             android:name="evertonrmachado.gclientes.ClienteExibirActivityNew"
             android:label="@string/cliente_exibir"
+            android:configChanges="orientation|screenSize"
             android:windowSoftInputMode="adjustResize" >
         </activity>
-
-
-
-
-
 
     </application>
 

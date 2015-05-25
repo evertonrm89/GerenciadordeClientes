@@ -18,7 +18,8 @@ public class ClienteDAO extends SQLiteOpenHelper {
 
     private static final int VERSAO = 1;
     private static final String TABELA_CLIENTES = "clientes";
-    private static final String DATABASE = "/sdcard/ClientesManager";
+    static Context context;
+    private static final String DATABASE = "ClientesManager";
     private static final String[] COLUNAS_CLIENTES = { "idCliente", "nome", "telefone", "celular", "email",
             "endereco", "cidade", "estado", "foto", "observacao", "status", "favorito" };
 
@@ -28,6 +29,8 @@ public class ClienteDAO extends SQLiteOpenHelper {
 
     public ClienteDAO(Context context) {
         super(context, DATABASE, null, VERSAO);
+
+        this.context = context;
     }
 
     @Override

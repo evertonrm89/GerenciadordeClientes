@@ -1,6 +1,7 @@
 package evertonrmachado.gclientes;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.util.SparseIntArray;
@@ -50,8 +51,8 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
         mListNameItem.add(1, getString(R.string.favorito));
         mListNameItem.add(2, getString(R.string.cliente_ativo));
         mListNameItem.add(3, getString(R.string.cliente_inativo));
-        mListNameItem.add(4, getString(R.string.vazio));
-        mListNameItem.add(5, getString(R.string.backup));
+      //  mListNameItem.add(4, getString(R.string.vazio));
+      //  mListNameItem.add(5, getString(R.string.backup));
         //mListNameItem.add(3, getString(R.string.agenda));
         //mListNameItem.add(4, getString(R.string.clientes_proximos));
        // mListNameItem.add(5, getString(R.string.relatorios));
@@ -64,7 +65,7 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
         mListIconItem.add(2, R.drawable.account);
         mListIconItem.add(3, R.drawable.account_remove);
         mListIconItem.add(4, 0);
-        mListIconItem.add(5, R.drawable.ic_backup);
+       // mListIconItem.add(5, R.drawable.ic_backup);
         //mListIconItem.add(3, R.drawable.ic_action_calendar_month); //Item no icon set 0
         //mListIconItem.add(4, R.drawable.ic_action_globe);
         //mListIconItem.add(5, R.drawable.ic_action_line_chart);
@@ -141,6 +142,11 @@ public class MainActivity extends NavigationLiveo implements NavigationLiveoList
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
     }
 
     @Override
