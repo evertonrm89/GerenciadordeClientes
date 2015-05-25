@@ -14,7 +14,7 @@
     <application
         android:allowBackup="true"
         android:backupAgent="evertonrmachado.gclientes.backup.Backup"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/ic_launcher2"
         android:label="@string/app_name"
         android:theme="@style/myTheme" >
         <meta-data

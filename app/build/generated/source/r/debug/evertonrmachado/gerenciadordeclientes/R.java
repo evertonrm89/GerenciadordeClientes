@@ -1899,7 +1899,7 @@ containing a value of this type.
         public static final int ic_action_edit=0x7f020057;
         public static final int ic_backup=0x7f020058;
         public static final int ic_launcher=0x7f020059;
-        public static final int ic_launcher_trans=0x7f02005a;
+        public static final int ic_launcher2=0x7f02005a;
         public static final int ic_novo=0x7f02005b;
         public static final int ic_plusone_medium_off_client=0x7f02005c;
         public static final int ic_plusone_small_off_client=0x7f02005d;
