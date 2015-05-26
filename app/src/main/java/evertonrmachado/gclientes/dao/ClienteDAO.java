@@ -19,7 +19,7 @@ public class ClienteDAO extends SQLiteOpenHelper {
     private static final int VERSAO = 1;
     private static final String TABELA_CLIENTES = "clientes";
     static Context context;
-    private static final String DATABASE = "ClientesManager";
+    private static final String DATABASE = "GClientes";
     private static final String[] COLUNAS_CLIENTES = { "idCliente", "nome", "telefone", "celular", "email",
             "endereco", "cidade", "estado", "foto", "observacao", "status", "favorito" };
 

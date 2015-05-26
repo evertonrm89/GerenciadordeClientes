@@ -244,6 +244,27 @@ public class ClienteExibirActivityNew extends Activity {
         }
         else
             btnFavorito.setImageResource(android.R.drawable.btn_star_big_off);
+
+        if(exibirCliente.getTelefone().isEmpty()){
+            btnTelefone.setEnabled(false);
+        }
+        else btnTelefone.setEnabled(true);
+
+        if(exibirCliente.getCelular().isEmpty()){
+            btnCelular.setEnabled(false);
+        }
+        else btnCelular.setEnabled(true);
+
+        if(exibirCliente.getEmail().isEmpty()){
+            btnEmail.setEnabled(false);
+        }
+        else btnEmail.setEnabled(true);
+
+        if(exibirCliente.getEndereco().isEmpty()){
+            btnMap.setEnabled(false);
+        }
+        else btnMap.setEnabled(true);
+
     }
 
     @Override
